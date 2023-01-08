@@ -7,7 +7,6 @@ const Routes = require('./routes/routeIndex.js');
 require('dotenv').config();
 const sqlConnection = require('./db/authentication');
 const sqlOperateDatabase = require('./db/connection')
-// const sqlOperations = requires('');
 
 // middleware
 app.use(express.json())
@@ -33,8 +32,8 @@ class Server {
 
   syncSequelizeModel(){
     sqlOperateDatabase.sync()
-    .then((result) => console.log(result))
-    .catch((err => console.log(err)))
+    // .then((result) => console.log(result))
+    // .catch((err => console.log(err)))
   }
 
   init() {

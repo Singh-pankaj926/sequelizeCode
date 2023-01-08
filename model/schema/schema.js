@@ -1,7 +1,6 @@
 // instantiate sequelize
 const { Sequelize, DataTypes } = require('sequelize');
 const sqlConnection = require('../../db/connection');
-require('dotenv').config();
 
 // 'Compound' is model name (pulralize form will be table name)
 // and here we are definig the model(we can call it schema) 
@@ -13,7 +12,7 @@ const compoundModel = sqlConnection.define('Compound', {
     allowNull: false,
     primaryKey: true
   },
-  compundName: {
+  name: {
     type: DataTypes.STRING,
     allowNull: false,
     unique: true
