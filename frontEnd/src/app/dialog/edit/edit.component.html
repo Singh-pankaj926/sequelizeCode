@@ -1,0 +1,25 @@
+<!-- <div *ngIf = "add"> -->
+    <h1 mat-dialog-title>Add New Compound</h1>
+    <form [formGroup]="addCompoundForm" (ngSubmit)="onSubmit()">
+        <div mat-dialog-content>
+            <mat-form-field appearance="outline">
+                <mat-label>Name Of Compound</mat-label>
+                <input matInput formControlName="name" placeholder="Name Of Compound">
+            </mat-form-field>
+            <br>
+            <mat-form-field appearance="fill">
+                <mat-label>Description</mat-label>
+                <textarea matInput formControlName="description" placeholder="description"></textarea>
+            </mat-form-field>
+            <br>
+            <mat-form-field appearance="outline" >
+                <mat-label>Image Link</mat-label>
+                <input matInput placeholder="Image Link" formControlName="imageLink">
+            </mat-form-field>
+            <mat-card-actions>
+                <button mat-raised-button color="warn" style = "margin-right: 6px;" mat-dialog-close>Cancel</button>
+                <button mat-raised-button color="warn" type="submit" [disabled]="!addCompoundForm.valid">Submit</button>
+            </mat-card-actions>
+        </div>
+    </form>
+<!-- </div> -->

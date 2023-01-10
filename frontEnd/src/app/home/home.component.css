@@ -1,0 +1,98 @@
+/* .example-card{
+    max-width: 250px;
+    max-height: 400px;
+    margin: 20px;
+    color: black;
+    background-color: white;
+    display: flex; 
+    justify-content: flex-start; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.example-header-image {
+    max-width: 250px;
+    max-height: 400px;
+    margin: 20px;
+    display: flex; 
+    justify-content: flex-start; 
+    flex-direction: row;
+    flex-flow: column wrap;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+} */
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+}
+
+.new{
+    height: 400px;
+    width: 300px;
+    border: 1px solid silver;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: rgb(0, 0, 0);
+    align-content: flex-start;
+}
+
+.new:hover{
+    cursor: pointer;
+    background-color: whitesmoke;
+}
+
+ul li a{
+    /* height: 22.5rem;
+    width: 20rem; */
+    height: 300px;
+    width: 300px;
+    /* border: 2px solid black;
+    margin: 0.5rem; */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    /* color: rgb(0, 0, 0); */
+    align-content: flex-start;
+}
+
+/* li a:hover{
+    cursor: pointer;
+    background-color: whitesmoke;
+}
+li b:hover{
+    cursor: pointer;
+    background-color: whitesmoke;
+} */
+
+.name{
+    padding-top: 10px;
+    padding-left: 5px;
+    font-size: 18px;
+}
+
+.description{
+    padding-top: 5px;
+    padding-left: 5px;
+    font-size: 14px;
+}
+
+/* mat-card-actions{
+    padding-top: 15px;
+} */
+
+mat-paginator{
+    /* display: flex;
+    justify-content: end; */
+    position:sticky;
+    /* align-items: flex-end; */
+}

@@ -1,0 +1,83 @@
+/* .example-card{
+    max-width: 250px;
+    max-height: 400px;
+    margin: 20px;
+    color: black;
+    background-color: white;
+    display: flex; 
+    justify-content: flex-start; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.example-header-image {
+    max-width: 250px;
+    max-height: 400px;
+    margin: 20px;
+    display: flex; 
+    justify-content: flex-start; 
+    flex-direction: row;
+    flex-flow: column wrap;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+} */
+
+ul{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin-left: 15px
+}
+
+ul li a{
+    height: auto;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    color: rgb(0, 0, 0);
+    align-content: flex-start;
+}
+
+/* li a:hover{
+    cursor: pointer;
+    background-color: whitesmoke;
+} */
+
+.name{
+    padding-top: 10px;
+    padding-left: 5px;
+    font-size: 35px;
+}
+
+.description{
+    margin-top: 15px;
+    padding-left: 5px;
+    font-size: 20px;
+}
+
+ul li b{
+    /* height: 120px; */
+    width: 580px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: none;
+    overflow-x: none;
+    color: rgb(0, 0, 0);
+    align-content: flex-start;
+}
+
+.content{
+    margin-top: 20px;
+}
+
+.new{
+    margin-top: 15px;
+    margin-left: 15px;
+}
